@@ -2,7 +2,6 @@
 import React from 'react';
 const MicroApp = React.lazy(() => import('micro_frontend/MicroApp'));
 
-console.log('MicroApp',MicroApp);
 
 function App() {
   return (
