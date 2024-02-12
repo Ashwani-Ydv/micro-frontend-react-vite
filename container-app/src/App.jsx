@@ -1,11 +1,13 @@
 // In the container app, dynamically import the MicroApp
 import React from 'react';
-const MicroApp = React.lazy(() => import('micro_frontend/MicroApp'));
+import MicroApp from 'micro_frontend/MicroApp'
+import './App.css'
+// const MicroApp = React.lazy(() => import('micro_frontend/MicroApp'));
 
 
 function App() {
   return (
-    <div>
+    <div className='app'>
       <h1>Container App</h1>
       <React.Suspense fallback="Loading Micro Frontend...">
         <MicroApp />

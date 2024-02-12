@@ -9,7 +9,7 @@ export default defineConfig({
     federation({
       name: 'container_app',
       remotes: {
-        micro_frontend: 'http://localhost:5174/assets/remoteEntry.js',
+        micro_frontend: 'http://localhost:5001/assets/remoteEntry.js',
       },
       shared: ['react', 'react-dom'],
     }),

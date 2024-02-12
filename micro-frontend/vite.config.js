@@ -4,9 +4,6 @@ import react from '@vitejs/plugin-react';
 import federation from '@originjs/vite-plugin-federation';
 
 export default defineConfig({
-  server: {
-    port: 5174,
-  },
   plugins: [
     react(),
     federation({
@@ -18,4 +15,7 @@ export default defineConfig({
       shared: ['react', 'react-dom'],
     }),
   ],
+  build: {
+    target: 'esnext'
+  },
 });
